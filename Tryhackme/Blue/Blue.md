@@ -1,6 +1,6 @@
-# Reversing ELF
+# Blue
 
-![alt text](banner.png)
+![alt text](https://github.com/rizbene/Writeups/blob/main/Tryhackme/Blue/Image/banner.png)
 
 `Difficulty : Easy`
 
