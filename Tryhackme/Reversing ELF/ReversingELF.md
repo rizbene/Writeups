@@ -2,28 +2,28 @@
 
 ![alt text](https://github.com/rizbene/Writeups/blob/main/Tryhackme/Reversing%20ELF/Image/banner.png)
 
-`Difficulty : Medium`
+`Difficulty : Easy`
 
 `Room :` [Reversing ELF](https://tryhackme.com/r/room/reverselfiles)
 
 ## Task 1 Crackme1
 
-Let's start with a basic warmup, can you run the binary?
+### Let's start with a basic warmup, can you run the binary?
 
-> What is the flag?
+### • What is the flag?
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ ./crackme1
 flag{not_that_kind_of_elf}
 ```
 
-`flag{not_that_kind_of_elf}`
+> flag{not_that_kind_of_elf}
 
 ## Task 2 Crackme2
 
-Find the super-secret password! and use it to obtain the flag
+### Find the super-secret password! and use it to obtain the flag
 
-> What is the super secret password ?
+### • What is the super secret password ?
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ ./crackme2
@@ -122,7 +122,7 @@ _ITM_registerTMCloneTable
 
 `super_secret_password`
 
-> What is the flag ?
+### • What is the flag ?
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ ./crackme2 super_secret_password
@@ -130,11 +130,11 @@ Access granted.
 flag{if_i_submit_this_flag_then_i_will_get_points}
 ```
 
-`flag{if_i_submit_this_flag_then_i_will_get_points}`
+> flag{if_i_submit_this_flag_then_i_will_get_points}
 
 ## Task 3 Crackme3
 
-Use basic reverse engineering skills to obtain the flag
+### Use basic reverse engineering skills to obtain the flag
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ strings crackme3
@@ -192,18 +192,18 @@ GCC: (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
 .comment
 ```
 
-> What is the flag?
+### • What is the flag?
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ echo "ZjByX3kwdXJfNWVjMG5kX2xlNTVvbl91bmJhc2U2NF80bGxfN2gzXzdoMW5nNQ==" | base64 -d
 f0r_y0ur_5ec0nd_le55on_unbase64_4ll_7h3_7h1ng5
 ```
 
-`f0r_y0ur_5ec0nd_le55on_unbase64_4ll_7h3_7h1ng5`
+> f0r_y0ur_5ec0nd_le55on_unbase64_4ll_7h3_7h1ng5
 
 ## Task 4 Crackme4
 
-Analyze and find the password for the binary?
+### Analyze and find the password for the binary?
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ r2 -d crackme4
@@ -329,13 +329,13 @@ hit breakpoint at: 0x4006d2
 my_m0r3_secur3_pwd
 ```
 
-> What is the password ?
+### • What is the password ?
 
-`my_m0r3_secur3_pwd`
+> my_m0r3_secur3_pwd`
 
 ## Task 5 Crackme5
 
-What will be the input of the file to get output Good game ?
+### What will be the input of the file to get output Good game ?
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ ./crackme5
@@ -487,13 +487,13 @@ hit breakpoint at: 0x40082c
 OfdlDSA|3tXb32~X3tX@sX`4tXtz\xcc\x7f
 ```
 
-> What is the input ?
+### • What is the input ?
 
-`OfdlDSA|3tXb32~X3tX@sX`4tXtz\xcc\x7f"
+> OfdlDSA|3tXb32~X3tX@sX`4tXtz\xcc\x7f
 
 ## Task 6 Crackme6
 
-Analyze the binary for the easy password
+### Analyze the binary for the easy password
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ r2 -d crackme6
@@ -709,13 +709,13 @@ riz@kali:~/Documents/THM/ReversingELF$ ./crackme6 1337_pwd
 password OK
 ```
 
-> What is the password ?
+### • What is the password ?
 
-`1337_pwd`
+> 1337_pwd
 
 ## Task 7 Crackme7
 
-Analyze the binary to get the flag
+### Analyze the binary to get the flag
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ r2 -d crackme7
@@ -935,13 +935,13 @@ Wow such h4x0r!
 flag{much_reversing_very_ida_wow}
 ```
 
-> What is the flag ?
+### • What is the flag ?
 
-`flag{much_reversing_very_ida_wow}`
+> flag{much_reversing_very_ida_wow}
 
 ## Task 8 Crackme8
 
-Analyze the binary and obtain the flag
+### Analyze the binary and obtain the flag
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ r2 -d crackme8
@@ -1033,7 +1033,7 @@ glibc.fc_offset = 0x00148
 
 ![alt text](image.png)
 
-> What is the flag ?
+### • What is the flag ?
 
 ```
 riz@kali:~/Documents/THM/ReversingELF$ ./crackme8 -889262067
@@ -1041,4 +1041,4 @@ Access granted.
 flag{at_least_this_cafe_wont_leak_your_credit_card_numbers}
 ```
 
-`flag{at_least_this_cafe_wont_leak_your_credit_card_numbers}`
+> flag{at_least_this_cafe_wont_leak_your_credit_card_numbers}
